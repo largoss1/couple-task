@@ -1,0 +1,216 @@
+/* Partner Section in Sidebar */
+.partner-section {
+  padding: 8px;
+  margin-bottom: 16px;
+}
+
+.partner-info {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 12px;
+  background: #242424;
+  border: 1px solid #333;
+  border-radius: 8px;
+  transition: all 0.15s ease;
+}
+
+.partner-info:hover {
+  background: #2a2a2a;
+  border-color: #444;
+}
+
+.partner-avatar {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #10b981 0%, #059669 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  flex-shrink: 0;
+  overflow: hidden;
+}
+
+.partner-avatar img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.partner-details {
+  flex: 1;
+  min-width: 0;
+}
+
+.partner-label {
+  font-size: 10px;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: #666;
+  letter-spacing: 0.5px;
+  margin-bottom: 2px;
+}
+
+.partner-name {
+  font-size: 13px;
+  font-weight: 500;
+  color: #10b981;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.partner-unlink-btn {
+  background: transparent;
+  border: 1px solid #333;
+  border-radius: 6px;
+  padding: 6px;
+  color: #999;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.15s ease;
+  flex-shrink: 0;
+}
+
+.partner-unlink-btn:hover:not(:disabled) {
+  background: #2a2a2a;
+  border-color: #ef4444;
+  color: #ef4444;
+}
+
+.partner-unlink-btn:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.partner-link-btn {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 10px 12px;
+  background: linear-gradient(135deg, #10b981 0%, #059669 100%);
+  border: none;
+  border-radius: 8px;
+  color: white;
+  font-size: 13px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.15s ease;
+}
+
+.partner-link-btn:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px rgba(16, 185, 129, 0.3);
+}
+
+.partner-link-btn:active {
+  transform: translateY(0);
+}
+
+/* Partner Link Modal */
+.partner-modal {
+  max-width: 500px;
+}
+
+.partner-info-box {
+  display: flex;
+  gap: 12px;
+  padding: 16px;
+  background: rgba(16, 185, 129, 0.1);
+  border: 1px solid rgba(16, 185, 129, 0.3);
+  border-radius: 8px;
+  margin-bottom: 20px;
+  color: #10b981;
+  font-size: 13px;
+  line-height: 1.6;
+}
+
+.partner-info-box strong {
+  display: block;
+  margin-bottom: 8px;
+  color: #10b981;
+}
+
+.partner-info-box ul {
+  margin: 0;
+  padding-left: 20px;
+}
+
+.partner-info-box li {
+  margin-bottom: 4px;
+  color: #e5e5e5;
+}
+
+/* Success Message */
+.success-message {
+  background: rgba(16, 185, 129, 0.1);
+  border: 1px solid rgba(16, 185, 129, 0.3);
+  border-radius: 6px;
+  padding: 12px 16px;
+  margin-bottom: 16px;
+  color: #10b981;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+/* Partner Task Styling */
+.task-item.partner-task {
+  border-left: 3px solid #10b981;
+  background: rgba(16, 185, 129, 0.03);
+}
+
+.task-item.partner-task:hover {
+  background: rgba(16, 185, 129, 0.08);
+}
+
+.task-title-row {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 4px;
+}
+
+.task-owner-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  padding: 2px 8px;
+  background: rgba(16, 185, 129, 0.15);
+  border: 1px solid rgba(16, 185, 129, 0.3);
+  border-radius: 12px;
+  font-size: 11px;
+  font-weight: 500;
+  color: #10b981;
+  white-space: nowrap;
+}
+
+.task-owner-badge img {
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .partner-info-box {
+    flex-direction: column;
+  }
+
+  .partner-name {
+    font-size: 12px;
+  }
+
+  .task-owner-badge {
+    font-size: 10px;
+    padding: 2px 6px;
+  }
+}
